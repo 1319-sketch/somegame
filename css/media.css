@@ -1,8 +1,8 @@
 @media only handheld{
 	body {
-		max-width: 600px;
+		width: 600px;
 	}
 	.wrap {
-		max-width: 600px;
+		width: 600px;
 	}
 }
