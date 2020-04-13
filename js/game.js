@@ -73,10 +73,10 @@ function draw() {
 	if (gameState == 1) {
 
 
-		ctx.font = "30px Verdana";
+		ctx.font = "30px Arial";
 		ctx.fillText("Увы, ему удалось улизнуть...", 10, 100);
 
-		ctx.font = "35px Verdana";
+		ctx.font = "35px Arial";
 		if (isHovered) ctx.fillStyle = ('#bef574');
 		else ctx.fillStyle = ('#9ACD32');
 		ctx.fillText("Может повторите?", 50, 250);
@@ -91,13 +91,13 @@ function draw() {
 
 	if (gameState == 2) {
 
-		ctx.font = "35px Verdana";
+		ctx.font = "35px Arial";
 		ctx.fillText("Поздравляем,", 85, 50);
 		ctx.fillText("одним нарушителем", 30, 100);
-		ctx.font = "40px Verdana";
+		ctx.font = "40px Arial";
 		ctx.fillText("стало меньше!",50,150);
 
-		ctx.font = "35px Verdana";
+		ctx.font = "35px Arial";
 		if (isHovered) ctx.fillStyle = ('#bef574');
 		else ctx.fillStyle = ('#9ACD32');
 		ctx.fillText("Может повторите?", 50, 250);
