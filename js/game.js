@@ -72,14 +72,16 @@ function draw() {
 
 	if (gameState == 1) {
 
-
-		ctx.font = "30px Arial";
-		ctx.fillText("Увы, ему удалось улизнуть...", 10, 100);
+		ctx.fillStyle = "#332fed";
+		ctx.font = "bold 25px Arial";
+		ctx.fillText("Увы, ему удалось улизнуть,", 30, 100);
+		ctx.fillText("и одним нарушителем", 50, 150);
+		ctx.fillText("в Зеленодольске стало больше.", 10, 200);
 
 		ctx.font = "35px Arial";
-		if (isHovered) ctx.fillStyle = ('#bef574');
-		else ctx.fillStyle = ('#9ACD32');
-		ctx.fillText("Может повторите?", 50, 250);
+		if (isHovered) ctx.fillStyle = ('#8987fa');
+		else ctx.fillStyle = ('#332fed');
+		ctx.fillText("Может повторите?", 50, 300);
 		ctx.fillStyle = '#9ACD32';
 
 		var retry = new Path2D();
@@ -91,16 +93,16 @@ function draw() {
 
 	if (gameState == 2) {
 
-		ctx.font = "35px Arial";
-		ctx.fillText("Поздравляем,", 85, 50);
-		ctx.fillText("одним нарушителем", 30, 100);
-		ctx.font = "40px Arial";
-		ctx.fillText("стало меньше!",50,150);
+		ctx.fillStyle = "#332fed";
+		ctx.font = "bold 25px Arial";
+		ctx.fillText("Поздравляем, одним нарушителем", 10, 100);
+		//ctx.fillText("одним нарушителем", 60, 100);
+		ctx.fillText("в Зеленодольске стало меньше!", 20, 150);
 
 		ctx.font = "35px Arial";
-		if (isHovered) ctx.fillStyle = ('#bef574');
-		else ctx.fillStyle = ('#9ACD32');
-		ctx.fillText("Может повторите?", 50, 250);
+		if (isHovered) ctx.fillStyle = ('#8987fa');
+		else ctx.fillStyle = ('#332fed');
+		ctx.fillText("Может повторите?", 50, 300);
 		ctx.fillStyle = '#9ACD32';
 
 		var retry = new Path2D();
@@ -185,7 +187,7 @@ canv.addEventListener('mousedown', function(e) {
 canv.addEventListener('mousedown', function(e) {
 	var x = e.offsetX;
 	var y = e.offsetY;
-	if (gameState > 0 && x >= 30 && x <= 385 && y >= 210 && y <= 260) {
+	if (gameState > 0 && x >= 30 && x <= 385 && y >= 260 && y <= 310) {
 		reloadGame();
 	} 
 });
@@ -373,7 +375,7 @@ function mouseMoveListen() {
 	canv.addEventListener('mousemove', function checkHover(e) {
 		x = e.offsetX;
 		y = e.offsetY;
-		if (x >= 30 && x <= 385 && y >= 210 && y < 260) {
+		if (x >= 30 && x <= 385 && y >= 260 && y < 310) {
 			if (gameState == 0) {
 				this.removeEventListener('mousemove', checkHover);
 			}
