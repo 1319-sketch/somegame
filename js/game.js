@@ -168,7 +168,6 @@ function draw() {
 }
 
 canv.addEventListener('mousedown', function(e) {
-	debugger;
 	if (gotox != 0 || gotoy != 0) return;
 	for (var i = 0; i < fieldSize; i++) {
 		for (var j = 0; j < fieldSize; j++) {
