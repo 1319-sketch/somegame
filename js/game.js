@@ -167,7 +167,7 @@ function draw() {
     requestAnimationFrame(draw);
 }
 
-canv.addEventListener('click', function(e) {
+canv.addEventListener('mousedown', function(e) {
 	if (gotox != 0 || gotoy != 0) return;
 	for (var i = 0; i < fieldSize; i++) {
 		for (var j = 0; j < fieldSize; j++) {
